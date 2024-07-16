@@ -1,14 +1,14 @@
-import {  HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RecipeCard from "../components/RecipeCard/RecipeCard.jsx";
 
 const AppRoutes = () => {
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<RecipeCard />} />
                 <Route path="/recipe/:id" element={<RecipeCard />} />
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
 
