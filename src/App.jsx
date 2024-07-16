@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div>
-      <Route path="/" element={<RecipeCard />} />
+      <Route path="/recipe-page" element={<RecipeCard />} />
       <Route path="/recipe/:id" element={<RecipeCard />} />
     </div>
   )
