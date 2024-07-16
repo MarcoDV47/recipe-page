@@ -1,0 +1,40 @@
+{
+    "name": "Receita de Omelete Simples",
+    "id": 1,
+    "description": "Um prato fácil e rápido, perfeito para qualquer refeição. Esta omelete clássica combina ovos batidos cozidos com perfeição, opcionalmente recheados com queijo, vegetais ou carnes à sua escolha.",
+    "image": {
+        "src": "../assets/images/image-omelette.jpeg",
+        "alt": "Omelete"
+    },
+    "preparation": [
+        "Total: Aproximadamente 10 minutos",
+        "Preparação: 5 minutos",
+        "Cozinhar: 5 minutos"
+    ],
+    "ingredients": [
+        "2-3 ovos grandes",
+        "Sal a gosto",
+        "Pimenta a gosto",
+        "1 colher de sopa de manteiga ou óleo",
+        "Recheios opcionais: queijo, legumes em cubos, carnes cozidas, ervas"
+    ],
+    "instructions": [
+        "Bata os ovos: Numa tigela, bata os ovos com uma pitada de sal e pimenta até ficarem bem misturados. Você pode adicionar uma colher de sopa de água ou leite para obter uma textura mais fofa.",
+        "Aqueça a frigideira: coloque uma frigideira antiaderente em fogo médio e adicione manteiga ou óleo.",
+        "Cozinhe a omelete: assim que a manteiga derreter e borbulhar, coloque os ovos. Incline a frigideira para garantir que os ovos cubram uniformemente a superfície.",
+        "Adicione recheios (opcional): quando os ovos começarem a endurecer nas bordas, mas ainda estiverem um pouco moles no meio, polvilhe os recheios escolhidos sobre metade da omelete.",
+        "Dobre e sirva: enquanto a omelete continua cozinhando, levante cuidadosamente uma das pontas e dobre-a sobre o recheio. Deixe cozinhar por mais um minuto e depois coloque-a em um prato.",
+        "Aproveite: Sirva quente, com mais sal e pimenta se necessário."
+    ],
+    "nutrition": {
+        "description": "A tabela abaixo mostra os valores nutricionais por porção sem recheios adicionais.",
+        "table": {
+            "values": {
+                "calories": "277kcal",
+                "carbs": "0g",
+                "protein": "20g",
+                "fat": "22g"
+            }
+        }
+    }
+}
