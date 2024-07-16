@@ -1,14 +1,13 @@
-import GlobalStyle from '../assets/styles/GlobalStyles'
-import AppRoutes from './pages/AppRoutes.jsx'
+import RecipeCard from './components/RecipeCard/RecipeCard.jsx'
 
 function App() {
 
 
   return (
-    <>
-      <GlobalStyle />
-      <AppRoutes />
-    </>
+    <div>
+      <Route path="/" element={<RecipeCard />} />
+      <Route path="/recipe/:id" element={<RecipeCard />} />
+    </div>
   )
 }
 
