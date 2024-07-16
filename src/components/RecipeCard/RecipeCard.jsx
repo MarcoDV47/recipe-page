@@ -9,7 +9,7 @@ import PrepTime from '../PrepTime/PrepTime';
 import NavButtons from '../NavButtons/NavButtons';
 
 async function fetchRecipe(id = 1) {
-    const response = await fetch(`../../data/recipe-${id}.json`);
+    const response = await fetch(`../../recipe-page/data/recipe-${id}.json`);
     return await response.json();
 }
 

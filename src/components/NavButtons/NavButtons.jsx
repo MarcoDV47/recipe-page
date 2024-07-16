@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const NavButtons = ({ handleClick, id = 1 }) => {
   return (
     <Nav>
-      <StyledLink onClick={handleClick} className={id == 1 && "hidden"} to={`/recipe/${id - 1}`}>Voltar</StyledLink>
-      <StyledLink onClick={handleClick} className={id == 3 && "hidden"} to={`/recipe/${Number(id) + 1}`}>Próximo</StyledLink>
+      <StyledLink onClick={handleClick} className={id == 1 && "hidden"} to={`/recipe-page/recipe/${id - 1}`}>Voltar</StyledLink>
+      <StyledLink onClick={handleClick} className={id == 3 && "hidden"} to={`/recipe-page/recipe/${Number(id) + 1}`}>Próximo</StyledLink>
     </Nav>
   )
 }
