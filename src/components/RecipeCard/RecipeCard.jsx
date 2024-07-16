@@ -37,7 +37,7 @@ const RecipeCard = () => {
             <Header
                 name={recipe.name}
                 description={recipe.description}
-                image={recipe.image}
+                image={recipe.image || "../../../assets/images/image-omelette.jpeg"}
             />
             <PrepTime prepInstructions={recipe.preparation} />
             <Ingredients ingredients={recipe.ingredients} />
