@@ -5,8 +5,8 @@ const AppRoutes = () => {
     return (
         <HashRouter>
             <Routes>
-                <Route path="/recipe-page" element={<RecipeCard />} />
-                <Route path="/recipe-page/recipe/:id" element={<RecipeCard />} />
+                <Route path="/" element={<RecipeCard />} />
+                <Route path="/recipe/:id" element={<RecipeCard />} />
             </Routes>
         </HashRouter>
     )
