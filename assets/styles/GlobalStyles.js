@@ -131,7 +131,7 @@ tr {
     }
 
     header img {
-        width: 100vw;
+        max-width: 100vw;
         border-radius: 0;
     }
 

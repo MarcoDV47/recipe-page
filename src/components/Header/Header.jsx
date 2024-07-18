@@ -1,4 +1,5 @@
 const Header = ({ name, description, image }) => {
+    
     const imageData = image;
     return (
         <header >

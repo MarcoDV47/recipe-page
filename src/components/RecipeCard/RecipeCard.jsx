@@ -7,14 +7,13 @@ import Instructions from '../Instructions/Instructions';
 import Nutrition from '../Nutrition/Nutrition';
 import PrepTime from '../PrepTime/PrepTime';
 import NavButtons from '../NavButtons/NavButtons';
+import { recipes } from '../../../data/recipes';
 
-async function fetchRecipe(id = 1) {
-    const response = await fetch(`../data/recipe-${id}.json`);
-    return await response.json();
+function fetchRecipe(id = 1) {
+    return recipes[id - 1];
 }
 
 const RecipeCard = () => {
-    const [recipe, setRecipe] = useState({});
 
     function scrollTop() {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
@@ -22,14 +21,16 @@ const RecipeCard = () => {
 
     let { id } = useParams();
 
+    const [recipe, setRecipe] = useState({});
+
     useEffect(() => {
-        async function getRecipe() {
-            const recipes = await fetchRecipe(id);
+        function getRecipe() {
+            const recipes = fetchRecipe(id);
             setRecipe(recipes);
         }
 
         getRecipe();
-    }, [recipe])
+    }, [id])
 
     return (
         <section>
@@ -47,11 +48,5 @@ const RecipeCard = () => {
         </section>
     )
 }
-const StyledLink = styled(Link)`
-  color: var(--primary-2);
-  font-weight: bold;
-  &.hidden{
-    visibility: hidden;
-  }
-`;
+
 export default RecipeCard;
